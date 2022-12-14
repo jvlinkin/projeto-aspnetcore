@@ -1,14 +1,21 @@
 ﻿@model IEnumerable<LanchesJa.Models.Lanche>
 
 	<div>
-		<h2>Todos os lanches</h2>
+		<h2>@ViewData["Titulo"]</h2>
 	</div>
+	<br />
+	<h2>@ViewData["Data"]</h2>
+
+	<hr />
+	<h5>@ViewBag.Total @ViewBag.TotalLanches</h5>	
+	<hr />
+	<h4>@TempData["Nome"]</h4>
 
 	@foreach(var lanche in Model)
 	{
-		<h4>@lanche.Nome</h4>
-		<p></p>
+		<h4>@lanche.Nome</h4>		
 		<p><img src="@lanche.ImagemUrl"/></p>
-		<h3>Preço: @lanche.Preco.ToString("c")</h3>
+		<h3>Preço: @lanche.Preco.ToString("c")</h3>		
+		<br />
 
 	}
