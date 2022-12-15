@@ -1,5 +1,6 @@
 ﻿using LanchesJa.Context;
 using LanchesJa.Migrations;
+using Microsoft.EntityFrameworkCore;
 
 namespace LanchesJa.Models
 {
@@ -63,6 +64,44 @@ namespace LanchesJa.Models
 			}
 			_context.SaveChanges();
 
+		}
+		public void RemoverDoCarrinho(Lanche lanche)
+		{
+			var carrinhoCompraItem = _context.CarrinhoCompraItens
+				.SingleOrDefault(s => s.Lanche.LancheId == lanche.LancheId && s.CarrinhoCompraId == CarrinhoCompraId);
+
+			
+
+			if(carrinhoCompraItem!= null)
+			{
+				if(carrinhoCompraItem.Quantidade > 1)
+				{
+					carrinhoCompraItem.Quantidade--;					
+				}
+				else
+				{
+					_context.CarrinhoCompraItens.Remove(carrinhoCompraItem);
+				}
+			}
+			_context.SaveChanges();
+			
+		}
+
+		public List<CarrinhoCompraItem> GetCarrinhoCompraItens()
+		{
+			return CarrinhoCompraItems ??
+				(CarrinhoCompraItems = _context.CarrinhoCompraItens.Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
+				.Include(s => s.Lanche)
+				.ToList());
+		}
+
+		public void LimparCarrinho()
+		{
+			var carrinhoItens = _context.CarrinhoCompraItens
+				.Where(c => c.CarrinhoCompraId == CarrinhoCompraId);
+
+			_context.CarrinhoCompraItens.RemoveRange(carrinhoItens);
+			_context.SaveChanges();
 		}
 	}
 }
