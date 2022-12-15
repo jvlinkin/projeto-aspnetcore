@@ -11,12 +11,19 @@
 	<h1>Todos os lanches</h1>
 
 	
-
+	<div class="container">
+		<div class="row">
 	@foreach(var lanche in Model)
 	{
-		<h4>@lanche.Nome</h4>		
-		<p><img src="@lanche.ImagemUrl"/></p>
-		<h3>Preço: @lanche.Preco.ToString("c")</h3>		
+			<div class="col-sm-4 col-md-4 col-lg-4 ">
+			<p><img src="@lanche.ImagemUrl" class="img-fluid"/></p>
+			<h3>Preço: @lanche.Preco.ToString("c")</h3>
+			<h4>@lanche.Nome</h4>
+			<p>@lanche.DescricaoCurta</p>	
+		
 		<br />
 
+		</div>
 	}
+	</div>
+	</div>
