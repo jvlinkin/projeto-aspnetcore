@@ -1,15 +1,16 @@
 ﻿@model IEnumerable<LanchesJa.Models.Lanche>
+@{
+	
+}
 
 	<div>
 		<h2>@ViewData["Titulo"]</h2>
 	</div>
 	<br />
-	<h2>@ViewData["Data"]</h2>
+	
+	<h1>Todos os lanches</h1>
 
-	<hr />
-	<h5>@ViewBag.Total @ViewBag.TotalLanches</h5>	
-	<hr />
-	<h4>@TempData["Nome"]</h4>
+	
 
 	@foreach(var lanche in Model)
 	{

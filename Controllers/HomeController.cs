@@ -10,7 +10,7 @@ namespace LanchesJa.Controllers
 
         public IActionResult Index()
         {
-            TempData["Nome"] = "João";
+           
             return View();
         }
 
