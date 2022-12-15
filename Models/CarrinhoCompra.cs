@@ -16,6 +16,7 @@ namespace LanchesJa.Models
 		public List<CarrinhoCompraItem> CarrinhoCompraItems { get; set; }
 
 		//Métodos
+		//Nesse caso não foi utilizado o método Repository
 		public static CarrinhoCompra GetCarrinho(IServiceProvider services)
 		{
 			//define uma sessão
@@ -35,6 +36,33 @@ namespace LanchesJa.Models
 			{
 				CarrinhoCompraId = carrinhoId
 			};
+		}
+
+		public void AdicionarAoCarrinho(Lanche lanche)
+		{
+			var carrinhoCompraItem = _context.CarrinhoCompraItens
+				//verificando se existe um lanche com o id que o usuario passou,
+				//e verificando se existe um carrinho de compra.
+				.SingleOrDefault(s => s.Lanche.LancheId == lanche.LancheId && s.CarrinhoCompraId == CarrinhoCompraId);
+
+			if(carrinhoCompraItem == null)
+			{
+				carrinhoCompraItem = new CarrinhoCompraItem
+				{
+					CarrinhoCompraId = CarrinhoCompraId,
+					Lanche = lanche,
+					Quantidade = 1
+				};
+
+				_context.CarrinhoCompraItens.Add(carrinhoCompraItem);
+			}
+			else
+			{
+				//Caso já exista o item no carrinho, só incremente a quantidade em +1.
+				carrinhoCompraItem.Quantidade++;
+			}
+			_context.SaveChanges();
+
 		}
 	}
 }
