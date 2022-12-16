@@ -13,8 +13,11 @@ namespace LanchesJa.Models
 			_context = context;
 		}
 
+		//Atributos
 		public string CarrinhoCompraId { get; set; }
 		public List<CarrinhoCompraItem> CarrinhoCompraItems { get; set; }
+
+
 
 		//Métodos
 		//Nesse caso não foi utilizado o método Repository
@@ -32,7 +35,7 @@ namespace LanchesJa.Models
 			//atribui o id do carrinho na sessão
 			session.SetString("CarrinhoId", carrinhoId);
 
-			//retorna o carrinho com o contexo e o Id atribuido ou obtido
+			//retorna o carrinho com o contexto e o Id atribuido ou obtido
 			return new CarrinhoCompra(context)
 			{
 				CarrinhoCompraId = carrinhoId

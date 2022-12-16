@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\Full-Cart-icon.png",
+      "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
+    },
+    {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\carousel11.jpg",
       "PackagePath": "staticwebassets\\images\\carousel11.jpg"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\carousel13.jpg",
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\remove.ico",
+      "PackagePath": "staticwebassets\\images\\remove.ico"
     },
     {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\js\\site.js",
