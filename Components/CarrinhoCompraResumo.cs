@@ -10,21 +10,29 @@ namespace LanchesJa.Components
 
 		public CarrinhoCompraResumo(CarrinhoCompra carrinhoCompra)
 		{
-			_carrinhoCompra= carrinhoCompra;
+			_carrinhoCompra = carrinhoCompra;
 		}
 		public IViewComponentResult Invoke()
 		{
-			//Recuperando os itens do carrinho
-			var itens = _carrinhoCompra.GetCarrinhoCompraItens();
 
-			//var itens = new List<CarrinhoCompraItem>()
+			// var itens = new List<CarrinhoCompraItem>()
 			//{
 			//	new CarrinhoCompraItem(),
 			//	new CarrinhoCompraItem()
 			//};	
+			//};	
+			//};	
 
+
+			//Recuperando os itens do carrinho
+			var itens = _carrinhoCompra.GetCarrinhoCompraItens();
 			//Jogando os itens recuperados, para dentro dos itens do carrinho;
 			_carrinhoCompra.CarrinhoCompraItems = itens;
+
+
+
+			
+
 
 			var carrinhoCompraViewModel = new CarrinhoCompraViewModel
 			{
