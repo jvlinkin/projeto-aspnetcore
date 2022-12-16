@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
     },
     {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\cart-5-16.ico",
+      "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
+    },
+    {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\remove.ico",
       "PackagePath": "staticwebassets\\images\\remove.ico"
     },

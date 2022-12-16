@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wMnCHVPMTxjKQfVS/ZdWOhXaGspLimLxowYQsB6X534=",
+  "Hash": "j12q68GoLUkR8yNCQQcBTTCC/Sk1ejDET4q7OhkitjU=",
   "Source": "LanchesJa",
   "BasePath": "_content/LanchesJa",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\carousel13.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\cart-5-16.ico",
+      "SourceId": "LanchesJa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\",
+      "BasePath": "_content/LanchesJa",
+      "RelativePath": "images/cart-5-16.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cart-5-16.ico"
     },
     {
       "Identity": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\Full-Cart-icon.png",
