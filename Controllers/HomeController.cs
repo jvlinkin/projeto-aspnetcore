@@ -1,17 +1,31 @@
 ﻿using LanchesJa.Models;
+using LanchesJa.Repositories;
+using LanchesJa.Repositories.Interfaces;
+using LanchesJa.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace LanchesJa.Controllers
 {
-    public class HomeController : Controller
+	
+	public class HomeController : Controller
     {
-        
+		private readonly ILancheRepository _lancheRepository;
 
-        public IActionResult Index()
+		public HomeController(ILancheRepository lancheRepository)
+		{
+			_lancheRepository = lancheRepository;
+		}
+
+
+		public IActionResult Index()
         {
+            var homeViewModel = new HomeViewModel
+            {
+                LanchesPreferidos = _lancheRepository.LanchesPreferidos
+            };
            
-            return View();
+            return View(homeViewModel);
         }
 
         
