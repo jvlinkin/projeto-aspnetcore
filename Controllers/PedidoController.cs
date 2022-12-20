@@ -55,7 +55,7 @@ namespace LanchesJa.Controllers
                 _pedidoRepositorio.CriarPedido(pedido);
 
                 //define mensagens ao cliente
-                ViewBag.CheckouCompletoMensagem = "Obrigado pelo seu pedido :)";
+                ViewBag.CheckoutCompletoMensagem = "Obrigado pelo seu pedido :)";
                 ViewBag.TotalPedido = _carrinhoCompra.GetCarrinhoCompraTotal();
 
                 //Limpar o carrinho do cliente
