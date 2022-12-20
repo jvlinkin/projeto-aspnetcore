@@ -1,8 +1,28 @@
 ﻿@model HomeViewModel
+<div class="container">
+	<div class="row">
+		<h1 class="text-center">Bem vindo ao LanchesJá!</h1>
+	</div>
+	
+</div>
+<br />
 
-<partial name="_Carousel"/>
+<div class="row">
+	<div class="col-md-12">
+		<partial name="_Carousel" />
+	</div>
+	<br />
+</div>
+<div>
+	<a asp-controller="Lanche" asp-action="List" role="button" class="btn btn-info">Ver todos os lanches</a>
+</div>
 
-<h2>Os preferidos da semana</h2>
+
+<br />
+<br />
+
+<h1 class="text-center">Os preferidos da semana</h1>
+<br />
 
 <div class="row">
 	@foreach (var lanche in Model.LanchesPreferidos)
