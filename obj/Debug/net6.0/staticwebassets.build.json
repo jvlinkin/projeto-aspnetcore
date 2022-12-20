@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xYQmSwnsIHIWUKJg/fruOXV42kLHSiigIr70cQet65w=",
+  "Hash": "QOv5qCDa8W+foWKNiWQ8kZ74OWFl0gIHJ8r533snPdA=",
   "Source": "LanchesJa",
   "BasePath": "_content/LanchesJa",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Home-iconred.png"
+    },
+    {
+      "Identity": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\logonavbar.png",
+      "SourceId": "LanchesJa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\",
+      "BasePath": "_content/LanchesJa",
+      "RelativePath": "images/logonavbar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logonavbar.png"
     },
     {
       "Identity": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\phone-app-icon.png",
