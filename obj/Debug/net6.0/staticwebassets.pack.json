@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\images\\faleconosco1.jpg"
     },
     {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\loginForm.png",
+      "PackagePath": "staticwebassets\\images\\loginForm.png"
+    },
+    {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\logonavbar.png",
       "PackagePath": "staticwebassets\\images\\logonavbar.png"
     },
