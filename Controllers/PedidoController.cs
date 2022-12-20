@@ -24,7 +24,12 @@ namespace LanchesJa.Controllers
         [HttpPost]
         public IActionResult Checkout(Pedido pedido)
         {
-            return View();
+            int totalItensPedido = 0;
+            decimal precoTotalPedido = 0.0m;
+
+            //Obter os itens do carrinho de compra do cliente
+            List<CarrinhoCompraItem> itens = _carrinhoCompra.GetCarrinhoCompraItens();
+            _carrinhoCompra.CarrinhoCompraItems = itens;
         }
 
     }
