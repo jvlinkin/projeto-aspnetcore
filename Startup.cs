@@ -1,9 +1,10 @@
-﻿
-using LanchesJa.Context;
+﻿using LanchesJa.Context;
 using LanchesJa.Models;
 using LanchesJa.Repositories;
 using LanchesJa.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace LanchesJa;
 
@@ -20,6 +21,11 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddDbContext<AppDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+        services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<IPedidoRepositorio, PedidoRepositorio>();
@@ -48,7 +54,7 @@ public class Startup
 
         app.UseRouting();
         app.UseSession();
-
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
