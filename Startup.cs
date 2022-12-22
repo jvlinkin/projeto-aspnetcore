@@ -26,7 +26,18 @@ public class Startup
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
 
-        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+		//services.Configure<IdentityOptions>(options =>
+		//{
+		//	// Default Password settings.
+		//	options.Password.RequireDigit = false;
+		//	options.Password.RequireLowercase = false;
+		//	options.Password.RequireNonAlphanumeric = false;
+		//	options.Password.RequireUppercase = false;
+		//	options.Password.RequiredLength = 3;
+		//	options.Password.RequiredUniqueChars = 1;
+		//});
+
+		services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<IPedidoRepositorio, PedidoRepositorio>();
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

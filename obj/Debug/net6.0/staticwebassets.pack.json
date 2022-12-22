@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
     },
     {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\registro.png",
+      "PackagePath": "staticwebassets\\images\\registro.png"
+    },
+    {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\remove.ico",
       "PackagePath": "staticwebassets\\images\\remove.ico"
     },
