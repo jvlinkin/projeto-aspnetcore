@@ -1,4 +1,5 @@
 ﻿using LanchesJa.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,7 @@ namespace LanchesJa.Controllers
 			_userManager = userManager;
 			_signInManager = signInManager;
 		}
-
+		[AllowAnonymous]
 		public IActionResult Login(string returnUrl)
 		{
 			return View(new LoginViewModel()
@@ -23,6 +24,7 @@ namespace LanchesJa.Controllers
 
 			});
 		}
+		[AllowAnonymous]
 		[HttpPost]
 		public async Task<IActionResult> Login(LoginViewModel loginVM)
 		{
@@ -51,13 +53,14 @@ namespace LanchesJa.Controllers
 			return View(loginVM);
 		}
 
-		
+		[AllowAnonymous]
 		public IActionResult Register()
 		{
 			return View();
 
 		}
 
+		[AllowAnonymous]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Register(LoginViewModel registerVM)
@@ -81,7 +84,7 @@ namespace LanchesJa.Controllers
 			return View(registerVM);
 
 		}
-
+		[Authorize]
 		[HttpPost]
 		public async Task<IActionResult> Logout()
 		{

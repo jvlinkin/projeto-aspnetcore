@@ -1,5 +1,6 @@
 ﻿using LanchesJa.Models;
 using LanchesJa.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanchesJa.Controllers
@@ -15,13 +16,15 @@ namespace LanchesJa.Controllers
             _pedidoRepositorio = pedidoRepositorio;
             _carrinhoCompra = carrinhoCompra;
         }
+        [Authorize]
         [HttpGet]
         public IActionResult Checkout()
         {
             return View();
         }
 
-        [HttpPost]
+		[Authorize]
+		[HttpPost]
         public IActionResult Checkout(Pedido pedido)
         {
             int totalItensPedido = 0;
