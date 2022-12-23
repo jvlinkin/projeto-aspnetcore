@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\Envelope-icon24.png"
     },
     {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\FA_Lanchescrocantes_1496x838.png",
+      "PackagePath": "staticwebassets\\images\\FA_Lanchescrocantes_1496x838.png"
+    },
+    {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\Full-Cart-icon.png",
       "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
     },
@@ -37,12 +41,28 @@
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
     },
     {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\carrosel1.webp",
+      "PackagePath": "staticwebassets\\images\\carrosel1.webp"
+    },
+    {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\carrosel2.jpg",
+      "PackagePath": "staticwebassets\\images\\carrosel2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\carrossel3.webp",
+      "PackagePath": "staticwebassets\\images\\carrossel3.webp"
+    },
+    {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\cart-5-16.ico",
       "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
     },
     {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\faleconosco1.jpg",
       "PackagePath": "staticwebassets\\images\\faleconosco1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\fast-food-realista-com-banner-de-simbolos-de-lanches-frescos_1284-57191.webp",
+      "PackagePath": "staticwebassets\\images\\fast-food-realista-com-banner-de-simbolos-de-lanches-frescos_1284-57191.webp"
     },
     {
       "Id": "C:\\Users\\jvlpa\\source\\repos\\LanchesJa\\LanchesJa\\wwwroot\\images\\loginForm.png",
